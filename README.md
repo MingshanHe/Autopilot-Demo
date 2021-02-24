@@ -29,3 +29,4 @@
 
 ## Object Detector
 
+  This module consists of training model and application model. The part of the training model is mainly supported by [Tensorflow Api](https://github.com/tensorflow/models). The preliminary work is the calibration and processing of the data set, and then the model training is completed according to the target detection training step in [Tensorflow Api](https://github.com/tensorflow/models). The part of the application model is mainly provided by ROS exactly tensorflow object detection which is in the vision folder. The model prediction is performed by calling the camera data, and finally the target detection result is output to the image.
