@@ -88,35 +88,45 @@ class DetectLane():
         contours_white, hierarchy_white = cv2.findContours(Gaussian_white, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
         contours_yellow, hierarchy_yellow = cv2.findContours(Gaussian_yellow, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
         
-        # draw the contours in origin image
-        cv2.drawContours(image, contours_white, -1, (139,104,0), 3)  
-        cv2.drawContours(image, contours_yellow, -1, (139,104,0), 3)  
+        pos_white = np.where(Gaussian_white == 255)
 
-        # try:
-        white_center = self.calculate_average(contours_white[0])
-        # print("white: ",white_center)
-        # except:
-        #     is_detect_white = 0
-        #     print("The Camera Can`t Catch The White Lane.")
-        # try:
-        yellow_center = self.calculate_average(contours_yellow[0])
-        # print("yellow: ",yellow_center)
-        # except:
-        #     is_detect_yellow = 0
-        #     print("The Camera Can`t Catch The Yellow Lane.")
+        print(type(pos_white[0]))
+        print(pos_white[0])
+        print(pos_white[0].sum()/len(pos_white[0]))
+        print(pos_white[1].sum()/len(pos_white[1]))
+        print(pos_yellow[0].sum()/len(pos_yellow[0]))
+        print(pos_yellow[1].sum()/len(pos_yellow[1]))
+        # # draw the contours in origin image
+        # cv2.drawContours(image, contours_white, -1, (139,104,0), 3)  
+        # cv2.drawContours(image, contours_yellow, -1, (139,104,0), 3)  
 
-        # Publish Image
-        self.pub_image_detect.publish(self.cvBridge.cv2_to_imgmsg(image,'bgr8'))
+        # # try:
+        # white_center = self.calculate_average(contours_white[0])
+        # # print("white: ",white_center)
+        # # except:
+        # #     is_detect_white = 0
+        # #     print("The Camera Can`t Catch The White Lane.")
+        # # try:
+        # yellow_center = self.calculate_average(contours_yellow[0])
+        # # print("yellow: ",yellow_center)
+        # # except:
+        # #     is_detect_yellow = 0
+        # #     print("The Camera Can`t Catch The Yellow Lane.")
+
+        # # Publish Image
+        # self.pub_image_detect.publish(self.cvBridge.cv2_to_imgmsg(image,'bgr8'))
         
-        # Publish Center
-        self.pub_center_white_lane.publish(white_center)
-        self.pub_center_yellow_lane.publish(yellow_center)
-        self.pub_center.publish((white_center+yellow_center)/2)
+        # # Publish Center
+        # self.pub_center_white_lane.publish(white_center)
+        # self.pub_center_yellow_lane.publish(yellow_center)
+        # self.pub_center.publish((white_center+yellow_center)/2)
 
     def calculate_average(self,input):
         sum_x = 0
         for i in input:
-            sum_x += i[0][0]
+            print(i[0][1])
+            if i[0][1] > 200:
+                sum_x += i[0][0]
         return sum_x/len(input)
 
     def main(self):

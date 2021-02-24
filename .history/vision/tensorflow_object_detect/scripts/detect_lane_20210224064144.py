@@ -116,7 +116,9 @@ class DetectLane():
     def calculate_average(self,input):
         sum_x = 0
         for i in input:
-            sum_x += i[0][0]
+            print(i[0][1])
+            if i[0][1] > 250:
+                sum_x += i[0][0]
         return sum_x/len(input)
 
     def main(self):

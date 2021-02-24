@@ -7,18 +7,12 @@ from cv_bridge import CvBridge
 from std_msgs.msg import UInt8, Float64
 from sensor_msgs.msg import Image, CompressedImage
 import time
-# from vision_msgs.msg import Center
 
 class DetectLane():
 
     def __init__(self):
         self.sub_image_original = rospy.Subscriber('/camera/image', Image, self.cbFindLane, queue_size = 1)
         self.pub_image_detect   = rospy.Publisher('/detect/lane', Image, queue_size = 1)
-
-        self.pub_center_white_lane  = rospy.Publisher('/control/white_lane', Float64, queue_size = 1)
-        self.pub_center_yellow_lane = rospy.Publisher('/control/yellow_lane', Float64, queue_size = 1)
-        self.pub_center = rospy.Publisher('/control/center', Float64, queue_size = 1)
-
         self.cvBridge = CvBridge()
 
         self.counter = 1
@@ -87,37 +81,37 @@ class DetectLane():
         # findContours of image
         contours_white, hierarchy_white = cv2.findContours(Gaussian_white, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
         contours_yellow, hierarchy_yellow = cv2.findContours(Gaussian_yellow, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
-        
+        # print contours
+        print(len(contours_white))
+        print(len(contours_yellow))
         # draw the contours in origin image
         cv2.drawContours(image, contours_white, -1, (139,104,0), 3)  
         cv2.drawContours(image, contours_yellow, -1, (139,104,0), 3)  
 
-        # try:
-        white_center = self.calculate_average(contours_white[0])
-        # print("white: ",white_center)
-        # except:
-        #     is_detect_white = 0
-        #     print("The Camera Can`t Catch The White Lane.")
-        # try:
-        yellow_center = self.calculate_average(contours_yellow[0])
-        # print("yellow: ",yellow_center)
-        # except:
-        #     is_detect_yellow = 0
-        #     print("The Camera Can`t Catch The Yellow Lane.")
-
-        # Publish Image
-        self.pub_image_detect.publish(self.cvBridge.cv2_to_imgmsg(image,'bgr8'))
+        # center of  white  and yellow lane
+        white_x,white_y = self.calculate_average(contours_white[0])
+        # print(contours_white[0])
+        # yellow_x, yellow_y = self.calculate_average(contours_yellow[0])
+        # print("white: ",white_x,white_y)
+        # print("yellow: ",yellow_x,yellow_y)
         
-        # Publish Center
-        self.pub_center_white_lane.publish(white_center)
-        self.pub_center_yellow_lane.publish(yellow_center)
-        self.pub_center.publish((white_center+yellow_center)/2)
+        # Publish
+        self.pub_image_detect.publish(self.cvBridge.cv2_to_imgmsg(image,'bgr8'))
+        # Bitwise-AND mask and original image
 
     def calculate_average(self,input):
         sum_x = 0
+        sum_y = 0
         for i in input:
-            sum_x += i[0][0]
-        return sum_x/len(input)
+            print(i)
+            type(i)
+            time.sleep(1)
+            
+            # sum_x += i[0]
+            # sum_y += i[1]
+        # return sum_x/len(input), sum_y/len(input)
+        print("")
+        return 0,90
 
     def main(self):
         rospy.spin()

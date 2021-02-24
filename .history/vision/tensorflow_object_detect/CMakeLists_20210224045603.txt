@@ -16,6 +16,13 @@ find_package(catkin REQUIRED COMPONENTS
   vision_msgs
 )
 
+# Self Configure Message
+add_message_files(  
+  FILES  
+  Center.msg  
+)  
+
+
 ##set the URL to download
 set(URL "http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz")
 set(DOWNLOAD_PATH ${CMAKE_CURRENT_SOURCE_DIR}/data/models/ssd_mobilenet_v1_coco_11_06_2017.tar.gz)

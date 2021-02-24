@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/hemingshan/auto_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/hemingshan/auto_ws/src/robot/turtlebot3_fake/include/**",
+        "/home/hemingshan/auto_ws/src/robot/turtlebot3_gazebo/include/**",
+        "/home/hemingshan/auto_ws/src/robot/turtlebot3_slam/include/**",
+        "/home/hemingshan/auto_ws/src/vision/vision_msg/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

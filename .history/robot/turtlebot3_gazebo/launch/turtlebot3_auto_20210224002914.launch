@@ -22,5 +22,4 @@
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"></node>
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node>
     <!-- <node pkg="tensorflow_object_detector" type="detect_lane.py" name="detect_lane"></node> -->
-    <!-- <node pkg="dl_control" type="detect_lane.py" name="detect_lane"></node> -->
   </launch>

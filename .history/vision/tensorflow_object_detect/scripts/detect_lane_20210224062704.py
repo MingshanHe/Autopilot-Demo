@@ -18,7 +18,7 @@ class DetectLane():
         self.pub_center_white_lane  = rospy.Publisher('/control/white_lane', Float64, queue_size = 1)
         self.pub_center_yellow_lane = rospy.Publisher('/control/yellow_lane', Float64, queue_size = 1)
         self.pub_center = rospy.Publisher('/control/center', Float64, queue_size = 1)
-
+        
         self.cvBridge = CvBridge()
 
         self.counter = 1
@@ -111,7 +111,7 @@ class DetectLane():
         # Publish Center
         self.pub_center_white_lane.publish(white_center)
         self.pub_center_yellow_lane.publish(yellow_center)
-        self.pub_center.publish((white_center+yellow_center)/2)
+        
 
     def calculate_average(self,input):
         sum_x = 0

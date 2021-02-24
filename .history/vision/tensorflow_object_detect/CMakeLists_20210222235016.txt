@@ -143,7 +143,6 @@ catkin_install_python(PROGRAMS scripts/detect_ros.py
 ## Your package locations should be listed before other locations
 include_directories(
 # include
-  msg
   ${catkin_INCLUDE_DIRS}
 )
 
