@@ -18,6 +18,7 @@
 
 ## Run Environment
 
-* Operating System: Ubuntu 20.04
-* Tensorflow: 2.4.1
-* CUDA: 11.1.0 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/linux/linux.png" alt="Linux"></code>
+* Operating System: Ubuntu 20.04<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png" alt="ubuntu"></code>
+* Tensorflow: 2.4.1<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" alt="tensorflow"></code>
+* CUDA: 11.1.0 <code><img height="20" src="Pictures/cuda.png" alt="cuda"></code>
+
