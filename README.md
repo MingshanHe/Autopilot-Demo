@@ -20,5 +20,12 @@
 
 * Operating System: Ubuntu 20.04<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png" alt="ubuntu"></code>
 * Tensorflow: 2.4.1<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png" alt="tensorflow"></code>
-* CUDA: 11.1.0 <code><img height="20" src="Pictures/cuda.png" alt="cuda"></code>
+* Cuda: 11.2.0 <code><img height="20" src="Pictures/cuda.png" alt="cuda"></code>
+
+* Python: 3.8.5 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="Python"></code>
+* Robot Operate System: Noetic<code><img height="20" src="Pictures/ros.jpeg" alt="ros"></code>
+
+------
+
+## Object Detector
 
