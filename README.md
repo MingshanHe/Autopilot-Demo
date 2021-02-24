@@ -8,9 +8,16 @@
 
 <img src="https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/turtlebot3/logo_turtlebot3.png" width="300">
 
-## ROS Packages for AutoPilot(Turtlebot3) Demo 
+## ROS Packages for AutoPilot(Turtlebot3) Demo ![GitHub watchers](https://img.shields.io/github/watchers/MingshanHe/Autopilot-Demo?label=Watch&style=social)
 
-|                           Version                            |                           Kinetic                            |                           Melodic                            |                            Noetic                            |
+|                           Version                            |                           License                            |                             Size                             |                            Noetic                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![Build Status](https://travis-ci.com/ROBOTIS-GIT/turtlebot3_simulations.svg?branch=develop) | ![Build Status](https://travis-ci.com/ROBOTIS-GIT/turtlebot3_simulations.svg?branch=develop) | ![Build Status](https://travis-ci.com/ROBOTIS-GIT/turtlebot3_simulations.svg?branch=develop) | ![Build Status](https://travis-ci.com/ROBOTIS-GIT/turtlebot3_simulations.svg?branch=develop) |
+| ![GitHub release (latest by date)](https://img.shields.io/github/v/release/MingshanHe/Autopilot-Demo) | ![Github](https://img.shields.io/github/license/MingshanHe/Autopilot-Demo?style=flat-square) | ![GitHub repo size](https://img.shields.io/github/repo-size/MingshanHe/Autopilot-Demo) | ![Build Status](https://travis-ci.com/ROBOTIS-GIT/turtlebot3_simulations.svg?branch=develop) |
 
+------
+
+## Run Environment
+
+* Operating System: Ubuntu 20.04
+* Tensorflow: 2.4.1
+* CUDA: 11.1.0 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/linux/linux.png" alt="Linux"></code>
