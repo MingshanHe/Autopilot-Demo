@@ -92,8 +92,6 @@ class DetectLane():
         self.reliability_white_line = 100
         self.reliability_yellow_line = 100
 
-        self.left_fitx  
-        self.right_fitx 
     def cbGetDetectLaneParam(self, config, level):
         rospy.loginfo("[Detect Lane] Detect Lane Calibration Parameter reconfigured to")
         rospy.loginfo("hue_white_l : %d", config.hue_white_l)

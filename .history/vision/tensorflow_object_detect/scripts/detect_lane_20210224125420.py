@@ -84,8 +84,8 @@ class DetectLane():
         erosion_yellow = cv2.erode(mask_yellow,kernel)
         Gaussian_white = cv2.GaussianBlur(erosion_white, (5,5),0)
         Gaussian_yellow = cv2.GaussianBlur(erosion_yellow, (5,5),0)
-        # cv2.imshow("g",Gaussian_yellow)
-        # cv2.waitKey(3)
+        cv2.imshow("g",Gaussian_yellow)
+        cv2.waitKey(3)
         # findContours of image
         contours_white, hierarchy_white = cv2.findContours(Gaussian_white, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
         contours_yellow, hierarchy_yellow = cv2.findContours(Gaussian_yellow, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)

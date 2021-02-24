@@ -347,10 +347,10 @@
       </spot>
     </light>
     <state world_name='default'>
-      <sim_time>441 117000000</sim_time>
-      <real_time>106 883431312</real_time>
-      <wall_time>1614073065 129302919</wall_time>
-      <iterations>98122</iterations>
+      <sim_time>746 84000000</sim_time>
+      <real_time>59 478812514</real_time>
+      <wall_time>1614144069 111863493</wall_time>
+      <iterations>52503</iterations>
       <model name='course'>
         <pose>0 0 0 0 0 -1.54</pose>
         <scale>1 1 1</scale>
@@ -371,74 +371,64 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='person_standing'>
-        <pose>0.610608 -1.86183 0.0001 4e-06 2e-06 -1.58697</pose>
-        <scale>0.1 0.1 0.1</scale>
-        <link name='link'>
-          <pose>0.610608 -1.86183 0.0001 4e-06 2e-06 -1.58697</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0.004458 -0.000853 0.000713 0</acceleration>
-          <wrench>0 0 0.004458 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='person_standing_clone'>
-        <pose>1.02782 -1.63992 0.0001 -0 -0 -1.58697</pose>
+        <pose>1.02782 -1.63992 0.0001 4e-06 2e-06 -1.58697</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>1.02782 -1.63992 0.0001 -0 -0 -1.58697</pose>
+          <pose>1.02782 -1.63992 0.0001 4e-06 2e-06 -1.58697</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 -0 -1e-06 0.000912 -0.000554 0</acceleration>
-          <wrench>-0 -0 -1e-06 0 -0 0</wrench>
+          <acceleration>0 0 -0.001246 -0.000856 0.000727 0</acceleration>
+          <wrench>0 0 -0.001246 0 -0 0</wrench>
         </link>
       </model>
       <model name='person_standing_clone_0'>
-        <pose>1.49292 -1.83145 0.0001 0 -1e-06 -1.58697</pose>
+        <pose>1.49358 -1.83189 0.0001 -0.000155 -4.1e-05 -1.58822</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>1.49292 -1.83145 0.0001 0 -1e-06 -1.58697</pose>
+          <pose>1.49358 -1.83189 0.0001 -0.000155 -4.1e-05 -1.58822</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 -1e-06 0.000929 0.000536 0</acceleration>
-          <wrench>0 -0 -1e-06 0 -0 0</wrench>
+          <acceleration>-0 -0 -4e-06 0.000909 -0.000729 2e-06</acceleration>
+          <wrench>-0 -0 -4e-06 0 -0 0</wrench>
         </link>
       </model>
       <model name='person_standing_clone_1'>
-        <pose>1.10983 -0.637474 0.0001 -2e-06 -0 1.34608</pose>
+        <pose>1.69248 -0.703134 0.0001 -0 1e-06 -0.60636</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>1.10983 -0.637474 0.0001 -2e-06 -0 1.34608</pose>
+          <pose>1.69248 -0.703134 0.0001 -0 1e-06 -0.60636</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 -4e-06 0.001051 0.000482 0</acceleration>
-          <wrench>0 -0 -4e-06 0 -0 0</wrench>
+          <acceleration>-0 0 -2.7e-05 -0.001091 -0.000377 0</acceleration>
+          <wrench>-0 0 -2.7e-05 0 -0 0</wrench>
         </link>
       </model>
       <model name='person_standing_clone_2'>
-        <pose>1.15818 -0.137139 0.0001 0 1e-06 -1.58697</pose>
+        <pose>1.86887 -1.32765 0.0001 -4e-06 -3e-06 -1.58697</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>1.15818 -0.137139 0.0001 0 1e-06 -1.58697</pose>
+          <pose>1.86887 -1.32765 0.0001 -4e-06 -3e-06 -1.58697</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 19.5992 -0.002737 0.00164 0</acceleration>
-          <wrench>0 0 19.5992 0 -0 0</wrench>
+          <acceleration>-0 -0 -4e-06 0.000909 -0.000728 0</acceleration>
+          <wrench>-0 -0 -4e-06 0 -0 0</wrench>
         </link>
       </model>
       <model name='person_standing_clone_3'>
-        <pose>1.05723 -0.141345 0.0001 4e-06 -0 1.79138</pose>
+        <pose>1.78297 -1.29676 0.0001 -0 1e-06 0.784547</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>1.05723 -0.141345 0.0001 4e-06 -0 1.79138</pose>
+          <pose>1.78297 -1.29676 0.0001 -0 1e-06 0.784547</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 0 -4e-06 -0.000747 -0.000904 0</acceleration>
-          <wrench>-0 0 -4e-06 0 -0 0</wrench>
+          <acceleration>-0 -0 -2.7e-05 0.000162 -0.001178 0</acceleration>
+          <wrench>-0 -0 -2.7e-05 0 -0 0</wrench>
         </link>
       </model>
       <model name='person_standing_clone_4'>
-        <pose>1.10936 -0.200074 0.0001 3e-06 -3e-06 -3.07907</pose>
+        <pose>1.82484 -1.39126 0.0001 -2e-06 0 -3.07907</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>1.10936 -0.200074 0.0001 3e-06 -3e-06 -3.07907</pose>
+          <pose>1.82484 -1.39126 0.0001 -2e-06 0 -3.07907</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 -0 -4e-06 0.000745 -0.000906 0</acceleration>
-          <wrench>-0 -0 -4e-06 0 -0 0</wrench>
+          <acceleration>-0 0 -4e-06 -0.000631 -0.000995 0</acceleration>
+          <wrench>-0 0 -4e-06 0 -0 0</wrench>
         </link>
       </model>
       <model name='traffic_parking'>
@@ -462,13 +452,13 @@
         </link>
       </model>
       <model name='traffic_tunnel'>
-        <pose>-1.544 -0.08 0.125 -1e-06 2e-06 -0.000129</pose>
+        <pose>-1.544 -0.08 0.125 -1e-06 5e-06 -0.000123</pose>
         <scale>1 1 1</scale>
         <link name='box'>
-          <pose>-1.544 -0.08 0.125 -1e-06 2e-06 -0.000129</pose>
+          <pose>-1.544 -0.08 0.125 -1e-06 5e-06 -0.000123</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.216115 -0.037025 19.4652 -2.84473 -1.41267 3.14021</acceleration>
-          <wrench>-0.216115 -0.037025 19.4652 0 -0 0</wrench>
+          <acceleration>-0.072104 -0.015012 -0.036111 0.120099 -0.576828 0</acceleration>
+          <wrench>-0.072104 -0.015012 -0.036111 0 -0 0</wrench>
         </link>
       </model>
       <model name='tunnel_occ_2_1'>
@@ -521,28 +511,6 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='turtlebot3'>
-        <pose>0.2689 -1.7784 -0.001003 -3e-06 0.007739 0.159381</pose>
-        <scale>1 1 1</scale>
-        <link name='base_footprint'>
-          <pose>0.2689 -1.7784 -0.001003 -3e-06 0.007739 0.159381</pose>
-          <velocity>0.000383 7.6e-05 2.8e-05 0.000173 -0.000129 -0.001371</velocity>
-          <acceleration>6e-06 -3.7e-05 -2.5e-05 0.000244 0.000287 -0.000281</acceleration>
-          <wrench>6e-06 -3.5e-05 -2.4e-05 0 -0 0</wrench>
-        </link>
-        <link name='wheel_left_link'>
-          <pose>0.256455 -1.69938 0.031996 -1.57001 0.48634 0.159705</pose>
-          <velocity>0.000491 8.6e-05 4.1e-05 -0.002205 0.013615 -0.001297</velocity>
-          <acceleration>2.6e-05 -2.8e-05 0 0.000854 0.000503 -0.000565</acceleration>
-          <wrench>1e-06 -1e-06 0 0 -0 0</wrench>
-        </link>
-        <link name='wheel_right_link'>
-          <pose>0.281849 -1.85735 0.031999 -1.56785 1.36761 0.162239</pose>
-          <velocity>0.000276 4.7e-05 5e-06 -0.000998 0.006618 -0.00128</velocity>
-          <acceleration>-3.2e-05 -2.2e-05 -3e-06 0.00059 0.000342 -0.00112</acceleration>
-          <wrench>-1e-06 -1e-06 -0 0 -0 0</wrench>
-        </link>
-      </model>
       <light name='sun'>
         <pose>0 0 10 0 -0 0</pose>
       </light>
@@ -561,7 +529,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-1.19768 -0.890932 4.28303 0 1.0618 0.133444</pose>
+        <pose>-2.25538 -4.87053 6.87315 0 1.0978 0.561531</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -1217,556 +1185,6 @@
       <pose>-1.04145 -1.12671 0 0 -0 0</pose>
     </model>
     <wind/>
-    <model name='turtlebot3'>
-      <link name='base_footprint'>
-        <inertial>
-          <pose>-0.00429 0 0.030734 0 -0 0</pose>
-          <mass>0.944735</mass>
-          <inertia>
-            <ixx>0.00717896</ixx>
-            <ixy>-1.22941e-05</ixy>
-            <ixz>0.00057674</ixz>
-            <iyy>0.00721804</iyy>
-            <iyz>-5.01209e-06</iyz>
-            <izz>0.00413858</izz>
-          </inertia>
-        </inertial>
-        <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
-          <pose>-0.032 0 0.08 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.14 0.14 0.143</size>
-            </box>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <collision name='base_footprint_fixed_joint_lump__camera_link_collision_1'>
-          <pose>0.047175 0 0.151938 0 0.174 0</pose>
-          <geometry>
-            <box>
-              <size>0.015 0.03 0.027</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <collision name='base_footprint_fixed_joint_lump__caster_back_link_collision_2'>
-          <pose>-0.081 1e-06 0.005 -1.57 0 0</pose>
-          <geometry>
-            <box>
-              <size>0.03 0.009 0.02</size>
-            </box>
-          </geometry>
-          <surface>
-            <contact>
-              <ode>
-                <kp>1e+06</kp>
-                <kd>100</kd>
-                <max_vel>1</max_vel>
-                <min_depth>0.001</min_depth>
-              </ode>
-            </contact>
-            <friction>
-              <ode>
-                <mu>0.1</mu>
-                <mu2>0.1</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <collision name='base_footprint_fixed_joint_lump__base_scan_collision_3'>
-          <pose>-0.017 0 0.1755 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.0315</length>
-              <radius>0.055</radius>
-            </cylinder>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='base_footprint_fixed_joint_lump__base_link_visual'>
-          <pose>-0.032 0 0.01 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>/home/hemingshan/auto_ws/src/robot/turtlebot3_description/meshes/bases/burger_base.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/DarkGrey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <visual name='base_footprint_fixed_joint_lump__base_scan_visual_1'>
-          <pose>-0.032 0 0.182 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>/home/hemingshan/auto_ws/src/robot/turtlebot3_description/meshes/sensors/lds.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/FlatBlack</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay/>
-        <velocity_decay/>
-        <sensor name='Pi Camera' type='camera'>
-          <always_on>1</always_on>
-          <visualize>0</visualize>
-          <camera>
-            <horizontal_fov>1.0856</horizontal_fov>
-            <image>
-              <width>320</width>
-              <height>240</height>
-              <format>R8G8B8</format>
-            </image>
-            <clip>
-              <near>0.03</near>
-              <far>100</far>
-            </clip>
-          </camera>
-          <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
-            <alwaysOn>1</alwaysOn>
-            <updateRate>30.0</updateRate>
-            <cameraName>camera</cameraName>
-            <frameName>camera_rgb_optical_frame</frameName>
-            <imageTopicName>image</imageTopicName>
-            <cameraInfoTopicName>camera_info</cameraInfoTopicName>
-            <hackBaseline>0.07</hackBaseline>
-            <distortionK1>0.0</distortionK1>
-            <distortionK2>0.0</distortionK2>
-            <distortionK3>0.0</distortionK3>
-            <distortionT1>0.0</distortionT1>
-            <distortionT2>0.0</distortionT2>
-            <robotNamespace>/</robotNamespace>
-          </plugin>
-          <pose>0.044513 0 0.148345 0 0.174 0</pose>
-        </sensor>
-        <velocity_decay/>
-        <sensor name='RGBD Camera' type='depth'>
-          <update_rate>20</update_rate>
-          <camera>
-            <horizontal_fov>1.0472</horizontal_fov>
-            <image>
-              <width>640</width>
-              <height>480</height>
-              <format>R8G8B8</format>
-            </image>
-            <clip>
-              <near>0.05</near>
-              <far>3</far>
-            </clip>
-          </camera>
-          <plugin name='camera_controller' filename='libgazebo_ros_openni_kinect.so'>
-            <baseline>0.2</baseline>
-            <alwaysOn>1</alwaysOn>
-            <updateRate>1.0</updateRate>
-            <cameraName>camera</cameraName>
-            <imageTopicName>/camera_rgb_optical_frame/color/image_raw</imageTopicName>
-            <cameraInfoTopicName>/camera_rgb_optical_frame/color/camera_info</cameraInfoTopicName>
-            <depthImageTopicName>/camera_rgb_optical_frame/depth/image_raw</depthImageTopicName>
-            <depthImageInfoTopicName>/camera_rgb_optical_frame/depth/camera_info</depthImageInfoTopicName>
-            <pointCloudTopicName>/camera_rgb_optical_frame/depth/points</pointCloudTopicName>
-            <frameName>camera_rgb_optical_frame</frameName>
-            <pointCloudCutoff>0.5</pointCloudCutoff>
-            <pointCloudCutoffMax>3.0</pointCloudCutoffMax>
-            <distortionK1>0.00000001</distortionK1>
-            <distortionK2>0.00000001</distortionK2>
-            <distortionK3>0.00000001</distortionK3>
-            <distortionT1>0.00000001</distortionT1>
-            <distortionT2>0.00000001</distortionT2>
-            <CxPrime>0</CxPrime>
-            <Cx>0</Cx>
-            <Cy>0</Cy>
-            <focalLength>0</focalLength>
-            <hackBaseline>0</hackBaseline>
-            <robotNamespace>/</robotNamespace>
-          </plugin>
-          <pose>0.044513 0 0.148345 0 0.174 0</pose>
-        </sensor>
-        <velocity_decay/>
-        <velocity_decay/>
-        <sensor name='imu' type='imu'>
-          <always_on>1</always_on>
-          <visualize>0</visualize>
-          <pose>-0.032 0 0.078 0 -0 0</pose>
-          <imu/>
-        </sensor>
-        <gravity>1</gravity>
-        <velocity_decay/>
-        <sensor name='lds_lfcd_sensor' type='ray'>
-          <visualize>0</visualize>
-          <update_rate>5</update_rate>
-          <ray>
-            <scan>
-              <horizontal>
-                <samples>360</samples>
-                <resolution>1</resolution>
-                <min_angle>0</min_angle>
-                <max_angle>6.28319</max_angle>
-              </horizontal>
-              <vertical>
-                <samples>1</samples>
-                <min_angle>0</min_angle>
-                <max_angle>0</max_angle>
-              </vertical>
-            </scan>
-            <range>
-              <min>0.12</min>
-              <max>3.5</max>
-              <resolution>0.015</resolution>
-            </range>
-            <noise>
-              <type>gaussian</type>
-              <mean>0</mean>
-              <stddev>0.01</stddev>
-            </noise>
-          </ray>
-          <plugin name='gazebo_ros_lds_lfcd_controller' filename='libgazebo_ros_laser.so'>
-            <topicName>scan</topicName>
-            <frameName>base_scan</frameName>
-            <robotNamespace>/</robotNamespace>
-          </plugin>
-          <pose>-0.032 0 0.182 0 -0 0</pose>
-        </sensor>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <joint name='wheel_left_joint' type='revolute'>
-        <pose relative_to='base_footprint'>0 0.08 0.033 -1.57 0 0</pose>
-        <parent>base_footprint</parent>
-        <child>wheel_left_link</child>
-        <axis>
-          <xyz>0 0 1</xyz>
-          <limit>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='wheel_left_link'>
-        <pose relative_to='wheel_left_joint'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 0 0 -0 0</pose>
-          <mass>0.0284989</mass>
-          <inertia>
-            <ixx>1.11756e-05</ixx>
-            <ixy>-4.23698e-11</ixy>
-            <ixz>-5.93817e-09</ixz>
-            <iyy>1.11924e-05</iyy>
-            <iyz>-1.44001e-11</iyz>
-            <izz>2.07126e-05</izz>
-          </inertia>
-        </inertial>
-        <collision name='wheel_left_link_collision'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.018</length>
-              <radius>0.033</radius>
-            </cylinder>
-          </geometry>
-          <surface>
-            <contact>
-              <ode>
-                <kp>500000</kp>
-                <kd>10</kd>
-                <max_vel>0.1</max_vel>
-                <min_depth>0.001</min_depth>
-              </ode>
-            </contact>
-            <friction>
-              <ode>
-                <mu>0.1</mu>
-                <mu2>0.1</mu2>
-                <fdir1>1 0 0</fdir1>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='wheel_left_link_visual'>
-          <pose>0 0 0 1.57 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>/home/hemingshan/auto_ws/src/robot/turtlebot3_description/meshes/wheels/left_tire.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/FlatBlack</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <gravity>1</gravity>
-        <velocity_decay/>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <joint name='wheel_right_joint' type='revolute'>
-        <pose relative_to='base_footprint'>0 -0.08 0.033 -1.57 0 0</pose>
-        <parent>base_footprint</parent>
-        <child>wheel_right_link</child>
-        <axis>
-          <xyz>0 0 1</xyz>
-          <limit>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='wheel_right_link'>
-        <pose relative_to='wheel_right_joint'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 0 0 -0 0</pose>
-          <mass>0.0284989</mass>
-          <inertia>
-            <ixx>1.11756e-05</ixx>
-            <ixy>-4.23698e-11</ixy>
-            <ixz>-5.93817e-09</ixz>
-            <iyy>1.11924e-05</iyy>
-            <iyz>-1.44001e-11</iyz>
-            <izz>2.07126e-05</izz>
-          </inertia>
-        </inertial>
-        <collision name='wheel_right_link_collision'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <length>0.018</length>
-              <radius>0.033</radius>
-            </cylinder>
-          </geometry>
-          <surface>
-            <contact>
-              <ode>
-                <kp>500000</kp>
-                <kd>10</kd>
-                <max_vel>0.1</max_vel>
-                <min_depth>0.001</min_depth>
-              </ode>
-            </contact>
-            <friction>
-              <ode>
-                <mu>0.1</mu>
-                <mu2>0.1</mu2>
-                <fdir1>1 0 0</fdir1>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='wheel_right_link_visual'>
-          <pose>0 0 0 1.57 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>/home/hemingshan/auto_ws/src/robot/turtlebot3_description/meshes/wheels/right_tire.stl</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/FlatBlack</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <gravity>1</gravity>
-        <velocity_decay/>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <plugin name='turtlebot3_burger_controller' filename='libgazebo_ros_diff_drive.so'>
-        <commandTopic>cmd_vel</commandTopic>
-        <odometryTopic>odom</odometryTopic>
-        <odometryFrame>odom</odometryFrame>
-        <odometrySource>world</odometrySource>
-        <publishOdomTF>1</publishOdomTF>
-        <robotBaseFrame>base_footprint</robotBaseFrame>
-        <publishWheelTF>0</publishWheelTF>
-        <publishTf>1</publishTf>
-        <publishWheelJointState>1</publishWheelJointState>
-        <legacyMode>0</legacyMode>
-        <updateRate>30</updateRate>
-        <leftJoint>wheel_left_joint</leftJoint>
-        <rightJoint>wheel_right_joint</rightJoint>
-        <wheelSeparation>0.160</wheelSeparation>
-        <wheelDiameter>0.066</wheelDiameter>
-        <wheelAcceleration>1</wheelAcceleration>
-        <wheelTorque>10</wheelTorque>
-        <rosDebugLevel>na</rosDebugLevel>
-        <robotNamespace>/</robotNamespace>
-      </plugin>
-      <static>0</static>
-      <plugin name='imu_plugin' filename='libgazebo_ros_imu.so'>
-        <alwaysOn>1</alwaysOn>
-        <topicName>imu</topicName>
-        <serviceName>imu_service</serviceName>
-        <gaussianNoise>0.0</gaussianNoise>
-        <updateRate>0</updateRate>
-        <imu>
-          <noise>
-            <type>gaussian</type>
-            <rate>
-              <mean>0.0</mean>
-              <stddev>2e-4</stddev>
-              <bias_mean>0.0000075</bias_mean>
-              <bias_stddev>0.0000008</bias_stddev>
-            </rate>
-            <accel>
-              <mean>0.0</mean>
-              <stddev>1.7e-2</stddev>
-              <bias_mean>0.1</bias_mean>
-              <bias_stddev>0.001</bias_stddev>
-            </accel>
-          </noise>
-        </imu>
-        <robotNamespace>/</robotNamespace>
-        <bodyName>base_footprint</bodyName>
-        <xyzOffset>0.032 0 -0.078</xyzOffset>
-        <rpyOffset>0 -0 0</rpyOffset>
-      </plugin>
-      <pose>0.245 -1.787 0 0 -0 0</pose>
-    </model>
-    <model name='person_standing'>
-      <link name='link'>
-        <inertial>
-          <pose>0 0 0 0 -0 0</pose>
-          <mass>1</mass>
-          <inertia>
-            <ixx>24.88</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>25.73</iyy>
-            <iyz>0</iyz>
-            <izz>2.48</izz>
-          </inertia>
-        </inertial>
-        <collision name='bottom'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.05 0.035 0.002</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <collision name='person'>
-          <pose>0 0 0.02 0.04 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://person_standing/meshes/standing.dae</uri>
-              <scale>0.1 0.1 0.1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <pose>0 0 0.02 0.04 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://person_standing/meshes/standing.dae</uri>
-              <scale>0.1 0.1 0.1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>0.35861 -1.41242 0 0 -0 0</pose>
-    </model>
     <model name='person_standing_clone'>
       <link name='link'>
         <inertial>

@@ -92,8 +92,7 @@ class DetectLane():
         self.reliability_white_line = 100
         self.reliability_yellow_line = 100
 
-        self.left_fitx  
-        self.right_fitx 
+        self.mov_avg_left = None
     def cbGetDetectLaneParam(self, config, level):
         rospy.loginfo("[Detect Lane] Detect Lane Calibration Parameter reconfigured to")
         rospy.loginfo("hue_white_l : %d", config.hue_white_l)
@@ -151,34 +150,34 @@ class DetectLane():
         try:
             if yellow_fraction > 3000:
                 self.left_fitx, self.left_fit = self.fit_from_lines(self.left_fit, cv_yellow_lane)
-                self.left_fitx = np.append(self.left_fitx,np.array([self.left_fit]), axis=0)
+                self.mov_avg_left = np.append(self.mov_avg_left,np.array([self.left_fit]), axis=0)
 
             if white_fraction > 3000:
                 self.right_fitx, self.right_fit = self.fit_from_lines(self.right_fit, cv_white_lane)
-                self.right_fitx = np.append(self.right_fitx,np.array([self.right_fit]), axis=0)
+                self.mov_avg_right = np.append(self.mov_avg_right,np.array([self.right_fit]), axis=0)
         except:
             if yellow_fraction > 3000:
                 self.left_fitx, self.left_fit = self.sliding_windown(cv_yellow_lane, 'left')
-                self.left_fitx = np.array([self.left_fit])
+                self.mov_avg_left = np.array([self.left_fit])
 
             if white_fraction > 3000:
                 self.right_fitx, self.right_fit = self.sliding_windown(cv_white_lane, 'right')
-                self.right_fitx = np.array([self.right_fit])
+                self.mov_avg_right = np.array([self.right_fit])
 
         MOV_AVG_LENGTH = 5
 
-        self.left_fit = np.array([np.mean(self.left_fitx[::-1][:, 0][0:MOV_AVG_LENGTH]),
-                            np.mean(self.left_fitx[::-1][:, 1][0:MOV_AVG_LENGTH]),
-                            np.mean(self.left_fitx[::-1][:, 2][0:MOV_AVG_LENGTH])])
-        self.right_fit = np.array([np.mean(self.right_fitx[::-1][:, 0][0:MOV_AVG_LENGTH]),
-                            np.mean(self.right_fitx[::-1][:, 1][0:MOV_AVG_LENGTH]),
-                            np.mean(self.right_fitx[::-1][:, 2][0:MOV_AVG_LENGTH])])
+        self.left_fit = np.array([np.mean(self.mov_avg_left[::-1][:, 0][0:MOV_AVG_LENGTH]),
+                            np.mean(self.mov_avg_left[::-1][:, 1][0:MOV_AVG_LENGTH]),
+                            np.mean(self.mov_avg_left[::-1][:, 2][0:MOV_AVG_LENGTH])])
+        self.right_fit = np.array([np.mean(self.mov_avg_right[::-1][:, 0][0:MOV_AVG_LENGTH]),
+                            np.mean(self.mov_avg_right[::-1][:, 1][0:MOV_AVG_LENGTH]),
+                            np.mean(self.mov_avg_right[::-1][:, 2][0:MOV_AVG_LENGTH])])
 
-        if self.left_fitx.shape[0] > 1000:
-            self.left_fitx = self.left_fitx[0:MOV_AVG_LENGTH]
+        if self.mov_avg_left.shape[0] > 1000:
+            self.mov_avg_left = self.mov_avg_left[0:MOV_AVG_LENGTH]
 
-        if self.right_fitx.shape[0] > 1000:
-            self.right_fitx = self.right_fitx[0:MOV_AVG_LENGTH]
+        if self.mov_avg_right.shape[0] > 1000:
+            self.mov_avg_right = self.mov_avg_right[0:MOV_AVG_LENGTH]
 
         self.make_lane(cv_image, white_fraction, yellow_fraction)
 
